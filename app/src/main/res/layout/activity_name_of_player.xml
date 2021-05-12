@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NameOfPlayer"
+    android:background="#f95">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+
+    <TextView
+        android:id="@+id/hola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hey Player's!!\n Enter your Names"
+        android:textSize="30sp"
+        android:fontFamily="@font/lobster_regular"
+        android:textColor="@color/white"
+        android:justificationMode="inter_word"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hola"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="50dp"
+        android:text="Player 1"
+        android:fontFamily="@font/lobster_regular"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/player1edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="100dp"
+        android:hint="Player 1: Enter Your Name  "
+        android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player1edit"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="50dp"
+        android:text="Player 2"
+        android:fontFamily="@font/lobster_regular"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/player2edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="100dp"
+        android:hint="Player 2: Enter Your Name "
+        android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player2edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/play_round_shape"
+            android:fontFamily="@font/lobster_regular"
+            android:onClick="submitbuttonclick"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Submit"
+            android:textColor="#f95"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</RelativeLayout>

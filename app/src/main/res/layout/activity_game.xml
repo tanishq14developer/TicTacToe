@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game"
+    android:background="#F95">
+    <TextView
+        android:id="@+id/playerdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lobster_regular"
+        android:textSize="24sp"/>
+
+
+
+
+    <com.example.tictactoe.TicTacToe
+        android:id="@+id/ticTacToe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:boardColor="#fff"
+        app:XColor="#e50027"
+        app:OColor="#FFFF00"
+        app:winniglinecolor="#00FF00"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ticTacToe"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/PlayAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/play_round_shape"
+            android:fontFamily="@font/lobster_regular"
+            android:onClick="playAgain"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Play Again"
+            android:textColor="#F95"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
