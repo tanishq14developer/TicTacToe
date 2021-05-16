@@ -10,4 +10,4 @@ The player has given play again option any many things just checkout
 ## Video Of Game
 
 
-[![TicTacToe](https://img.youtube.com/vi/ylVJkkUos6Q/0.jpg)](https://www.youtube.com/watch?v=ylVJkkUos6Q)
+[![TicTacToe](https://img.youtube.com/vi/ylVJkkUos6Q/0.png)](https://www.youtube.com/watch?v=ylVJkkUos6Q)
